@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row g-0">
+        <!-- Menu lateral -->
+        <div class="sidebar col-md-2">
+            <ul class="list-group">
+                <li class="list-group-item eventName" style="border: 0;">SLACA 2019</li>
+                <li class="list-group-item" style="border: 0;"><img src="dewey4.png" class="img-fluid"></li>
+                <li class="list-group-item navText">Apresentação</li>
+                <li class="list-group-item navText">Comitês</li>
+                <li class="list-group-item navText">Autores</li>
+                <li class="list-group-item navText">Eixos temáticos</li>
+                <li class="list-group-item navText-active">
+                    <div id="active-box"></div>
+                    <span class="navText" style="padding: 0.5rem 1rem; display: block;">Trabalhos</span>
+                </li>
+                <li class="list-group-item navText">Contato</li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- Cabeçalho, conteudo e rodapé -->
+        <div class="col-md-10">
+            <!-- Cabeçalho -->
+            <div class="header">
+                <div class="row">
+                    <div class="col-md-auto">
+                        <p class="headerSimposio" style="margin-bottom: 0;">Anais do Simpósio Latino Americano de
+                            Ciências de Alimentos</p>
+                        <span class="headerTitle">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</span>
+                        <p class="headerSubtitle" style="margin-bottom: 0;">ISSN: 1234-5678</p>
+                    </div>
+                    <div class="col align-self-center">
+                        <div class="dropdown languages float-end">
+                            <button class="btn btn-languages dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-globe2"></i>
+                                PT, BR
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-auto align-self-center">
+                        <div class="headerLogin float-end">
+                            <div class="row">
+                                <div class="col-md-auto" style="text-align: right;">
+                                    <span class="headerWelcome" style="display: block;">Bem-vindo</span>
+                                    <span class="headerEmail">alguem12@galoascience.com</span>
+                                </div>
+                                <div class="col-md-auto align-self-center">
+                                    <button type="button" class="btn btn-login position-relative float-end">
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            99+
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Conteudo -->
+            <div class="content">
+
+                <!-- Titulo e botões -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="content-title">Análise sensorial de preparações funcionais desenvolvidas para
+                            escolares entre 09 e 15 anos, do município de Campinas/SP</h1>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="botoes float-end">
+                            <button type="button" class="btn btn-orange"><i class="bi bi-download"
+                                    style="margin-right: 7px;"></i>Download</button>
+                            <button type="button" class="btn btn-orange"><i class="bi bi-star-fill"></i></button>
+                            <button type="button" class="btn btn-orange"><img src="doi.png"></button>
+                        </div>
+                        <p class="btn-subtitle float-end">COMO CITAR ESSE TRABALHO?</p>
+                    </div>
+                </div>
+
+                <!-- Vídeo e detalhes -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <iframe width="100%" height="439" class="yvideo" id="pgHr6luyjjs"
+                            src="http://www.youtube.com/embed/pgHr6luyjjs?rel=0&controls=0&hd=1&showinfo=0&enablejsapi=1"
+                            frameborder="0" allowfullscreen>
+                            <p>Seu navegador não possui Suporte para este recurso...</p>
+                        </iframe>
+                    </div>
+                    <div class="col-md-4 details">
+                        <div class="details-title">
+                            Detalhes
+                        </div>
+                        <div class="vertical-scrollable">
+                            <p>Tipo de Apresentação: <b>Pôster</b><br />
+                                Eixo temático: <b>Alimentação e saúde (AS) </b><br />
+                                Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b><br /><br />
+
+                                <b>Autores:</b><br />
+                                Galileo Galilei¹<br />
+                                Berta Lange de Morretes²<br />
+                                Isaac Newton³<br />
+                                Cesar Lattes¹<br />
+                                Stephen Hawking⁴<br /><br /><br /><br /><br />
+
+                                ¹Universidade Estadual de Campinas<br />
+                                ²Universidade de São Paulo<br />
+                                ³Instituto Nacional de Pesquisas Espaciais<br />
+                                ⁴Universidade Federal do Rio de Janeiro<br />
+                                <br /><br /><br /><br /><br /><br /><br /><br /><br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resumo -->
+                <div class="row" style="margin-top: 2rem;">
+                    <div class="col resume">
+                        <div class="resume-title">
+                            Resumo
+                        </div>
+                        <div class="resume-text" id="resume-text">
+                            <p class="dots">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae
+                                turpis auctor,
+                                mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis
+                                quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl,
+                                vel
+                                aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum
+                                ut.
+                                Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus.
+                                Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus
+                                condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque
+                                sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam
+                                dictum
+                                nisl, vel aliquet enim accumsan sit ametl accumsant...</p>
+
+                            <div class="collapse" id="collapseExample">
+                                <p>Sed posuere luctus augue, ac blandit lacus blandit id. Curabitur egestas
+                                    sit amet sapien vitae tincidunt. Integer ornare, lorem vel convallis sagittis,
+                                    purus
+                                    ipsum sollicitudin felis, non ornare lectus odio efficitur dui. Ut laoreet velit
+                                    in
+                                    scelerisque congue. Mauris imperdiet venenatis suscipit. Integer sed purus
+                                    mollis,
+                                    interdum mauris eu, lobortis massa. Duis mollis ipsum at erat aliquam fermentum.
+                                    Sed
+                                    non posuere lorem. Etiam sodales elementum viverra. Sed posuere egestas dolor at
+                                    fermentum. Pellentesque aliquam pretium lorem sed auctor.
+                                </p>
+                                <p>Cras auctor nunc magna, nec ultricies sem scelerisque vitae. Vivamus ultricies
+                                    odio
+                                    ornare, ultrices orci ut, mattis justo. Praesent vitae efficitur sem, cursus
+                                    accumsan ante. Curabitur vitae volutpat turpis. Nullam quis mauris orci. Etiam
+                                    egestas nisi nec sapien scelerisque, sed gravida lacus venenatis. Vestibulum
+                                    interdum blandit odio, ac finibus metus blandit sed. Nunc placerat, tellus
+                                    rhoncus
+                                    vehicula viverra, libero purus euismod erat, a convallis nibh orci sed nisi.
+                                </p>
+                                <p> Quisque ac est at arcu imperdiet fringilla at at quam. Cras malesuada finibus
+                                    ligula. Ut lectus est, faucibus vitae mi nec, congue feugiat lacus. Pellentesque
+                                    ut
+                                    nisi quis sem porta iaculis. Donec rhoncus est nulla, sed molestie ex consequat
+                                    egestas. Donec egestas dapibus dictum. Sed elit mi, lacinia non libero sed,
+                                    efficitur tincidunt odio. Pellentesque eget felis posuere, cursus urna et,
+                                    dignissim
+                                    erat. Phasellus vel eros pharetra, tempor nisl sit amet, elementum orci. Etiam
+                                    pretium ut metus nec porttitor.
+
+                                <p>Morbi et sollicitudin nisl. Aliquam ut rhoncus ante. Curabitur nec sodales
+                                    turpis,
+                                    sit amet condimentum urna. Nam maximus aliquam enim vel fringilla. Nulla iaculis
+                                    id
+                                    quam sed pretium. Praesent egestas ipsum in nulla facilisis sagittis in non
+                                    urna.
+                                    Donec lorem sem, egestas quis maximus a, ultricies et neque.</p>
+                            </div>
+                            <b style="color: #ED7839;"> <a data-bs-toggle="collapse" href="#collapseExample"
+                                    role="button" aria-expanded="false" aria-controls="collapseExample"
+                                    id="btnCollapse">
+                                    ver mais
+                                </a>
+                            </b>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Discussões -->
+                <div class="row" style="margin-top: 2rem;">
+                    <div class="col topic">
+                        <div class="topic-title">
+                            Discussões
+                        </div>
+                        <div class="topic-content">
+
+                            <!-- Formulario 1 -->
+                            <div class="topic-content1">
+                                <div class="topic-content-title">Compartilhe suas ideias ou dúvidas com os autores!
+                                </div>
+                                <div class="topic-content-icons">
+                                    <img src="icone1.png">
+                                    <img src="icone2.png">
+                                    <img src="icone3.png">
+                                </div>
+                                <div class="topic-content-text">Sabia que o maior estímulo no desenvolvimento científico
+                                    e
+                                    cultural é a curiosidade?
+                                    Deixe seus questionamentos ou sugestões para o autor!</div>
+                            </div>
+
+                            <!-- Formulario 2 -->
+                            <div class="topic-content2" style="display: none;">
+                                <div class="topic-content2-title">Tem uma dúvida ou sugestão? Compartilhe seu feedback
+                                    com
+                                    os autores!</div>
+                                <div class="topic-content2-form">
+                                    <label for="inputText" class="form-label topic-label">Assunto</label>
+                                    <input type="text" id="inputText" class="form-control">
+                                    <br />
+                                    <label for="inputTextarea" class="form-label topic-label">Conteúdo</label>
+                                    <textarea class="form-control" id="inputTextarea" rows="4"></textarea>
+                                    <div class="form-buttons">
+                                        <img src="Shape.png" style="margin-left: 1rem; margin-top: 0.5rem;">
+                                        <img src="Shape (1).png" style="margin-left: 1rem; margin-top: 0.5rem;">
+                                        <button class="btn btn-topic2" type="button">Enviar</button>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Formulario 3 -->
+                            <div class="topic-content3" style="display: none;">
+                                <div class="topic-content-title">
+                                    Seu tópico foi enviado com sucesso! :D
+                                </div>
+                                <div class="topic-content3-middletext">
+                                    Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim
+                                    que seu tópico for respondido!
+                                </div>
+                                <div class="topic-content3-text">Descubra outros trabalhos!</div>
+                            </div>
+
+                            <!-- CRIAR TOPICO BOTAO -->
+                            <div class="div-topic-hr">
+                                <hr class="topic-hr">
+                                <button type="button" class="btn btn-topic1"><i class="bi bi-plus-lg"
+                                        style="margin-right: 3px;"></i>criar tópico</button>
+                                <button type="button" class="btn btn-topic3" style="display: none;">criar novo
+                                    tópico</button>
+                                <hr class="topic-hr">
+                            </div>
+
+                            <!-- Tópico com blur -->
+                            <div class="motherRelative" style="display: none;">
+                                <div class="topic-coments-mother blurred-topic" style="display: block;">
+                                    <div class="topic-coments">
+                                        <div class="topic-coments-title">Assunto da pergunta aparece aqui</div>
+                                        <div class="topic-coments-person">Carlos Henrique Santos</div>
+                                        <div class="topic-coments-text">Comecinho da pergunta aparece aqui resente
+                                            relato
+                                            inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                            situado
+                                            impacto de processo formativo processo...</div>
+                                        <div class="topic-coments-reply">
+                                            <i class="bi bi-three-dots-vertical"
+                                                style="color: #ED7839; margin-right: 1%;"></i>
+                                            <button type="button" class="btn btn-orange2"><i
+                                                    class="bi bi-heart-fill"></i></button>
+                                            <span class="topic-coments-reply-text">1 like</span>
+                                            <span class="topic-coments-reply-text">1 resposta</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overblur">
+                                    <img src="mark2.png">
+                                    <div class="overblur-title">
+                                        Aguardando feedback dos autores
+                                    </div>
+                                    <div class="overblur-edit">
+                                        Editar tópico
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="topic-coments-mother">
+                                <div class="topic-coments">
+                                    <div class="topic-coments-title">Assunto da pergunta aparece aqui</div>
+                                    <div class="topic-coments-person">Carlos Henrique Santos</div>
+                                    <div class="topic-coments-text">Comecinho da pergunta aparece aqui resente relato
+                                        inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                        situado
+                                        impacto de processo formativo processo...</div>
+                                    <div class="topic-coments-reply">
+                                        <i class="bi bi-three-dots-vertical"
+                                            style="color: #ED7839; margin-right: 1%;"></i>
+                                        <button type="button" class="btn btn-orange2"><i
+                                                class="bi bi-heart-fill"></i></button>
+                                        <span class="topic-coments-reply-text">1 like</span>
+                                        <span class="topic-coments-reply-text">1 resposta</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="topic-coments-mother">
+
+                                <!-- Tópico com respostas -->
+                                <a href="#anchor" class="btnComents">
+                                    <div class="topic-coments" id="anchor">
+                                        <div class="topic-coments-title">Assunto da pergunta aparece aqui</div>
+                                        <div class="topic-coments-person">Carlos Henrique Santos</div>
+                                        <div class="topic-coments-text">Comecinho da pergunta aparece aqui resente
+                                            relato
+                                            inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                            situado
+                                            impacto de processo formativo processo resente relato inscreve-se no campo
+                                            da
+                                            análise da dimensão e impacto de processo formativo situado impacto de
+                                            processo
+                                            formativo processo?</div>
+                                        <div class="topic-coments-reply">
+                                            <i class="bi bi-three-dots-vertical"
+                                                style="color: #ED7839; margin-right: 1%;"></i>
+                                            <button type="button" class="btn btn-orange2"><i
+                                                    class="bi bi-heart-fill"></i></button>
+                                            <span class="topic-coments-reply-text">4 likes</span>
+                                            <span class="topic-coments-reply-text">4 respostas</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Respostas de um tópico -->
+                                <div class="topic-answers" style="display: none;">
+                                    <div class="topic-autor">
+                                        <div class="topic-reply-mark float-end">
+                                            <img src="mark.png">
+                                        </div>
+                                        <div class="topic-reply-mark float-end">Autor
+                                        </div>
+                                        <div class="topic-reply-person">Adriano da Silva</div>
+                                        <div class="topic-reply-text">Resposta do autor é aqui. Relato inscreve-se no
+                                            campo da análise da dimensão e impacto de processo formativo situado impacto
+                                            de processo formativo processo resente relato inscreve-se no campo da
+                                            análise da dimensão e impacto de processo formativo situado impacto de
+                                            processo formativo processo.</div>
+                                    </div>
+                                    <div class="topic-asker">
+                                        <div class="topic-reply-person">Carlos Henrique Santos</div>
+                                        <div class="topic-reply-text">Consegui entender melhor agora! Parece que a
+                                            variação da análise da dimensão e impacto de processo formativo situado
+                                            impacto de processo formativo.
+
+                                            Obrigada pela resposta, muito interessante o seu trabalho! </div>
+                                    </div>
+                                    <div class="topic-autor">
+                                        <div class="topic-reply-mark float-end">
+                                            <img src="mark.png">
+                                        </div>
+                                        <div class="topic-reply-mark float-end">Coautor
+                                        </div>
+                                        <div class="topic-reply-person">Carmila Ferreira Andrade</div>
+                                        <div class="topic-reply-text">
+                                            <p>Também ínteressante lembrar que o relato
+                                                inscreve-se no campo da análise da dimensão e impacto de processo
+                                                formativo
+                                                situado impacto de processo formativo processo resente relato
+                                                inscreve-se no
+                                                campo da análise da dimensão e impacto de processo formativo situado
+                                                impacto
+                                                de processo formativo processo.</p>
+
+                                            <p>Situado impacto de processo formativo processo resente relato inscreve-se
+                                                no
+                                                campo da análise da dimensão e impacto de processo formativo situado
+                                                impacto
+                                                de processo formativo processo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="topic-autor">
+                                        <div class="topic-reply-mark float-end">
+                                            <img src="mark.png">
+                                        </div>
+                                        <div class="topic-reply-mark float-end">Coautor
+                                        </div>
+                                        <div class="topic-reply-person">Ana Carolina</div>
+                                        <div class="topic-reply-text">Resposta do autor é aqui. Relato inscreve-se no
+                                            campo da análise da dimensão e impacto de processo formativo situado impacto
+                                            de processo formativo processo resente relato inscreve-se no campo da
+                                            análise da dimensão e impacto de processo formativo situado impacto de
+                                            processo formativo processo..</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rodape -->
+                <div class="footer" style="margin-top: 5%;">
+                    <img src="imagem - footer.png" class="img-fluid">
+                </div>
+            </div>
+            <script>
+                //VER MENOS e VER MAIS
+                let x = true;
+                let btnCollapse = document.querySelector('#btnCollapse')
+                btnCollapse.addEventListener('click', () => {
+                    if (x === true) {
+                        btnCollapse.innerHTML = 'ver menos'
+                        x = false
+                    } else {
+                        x = true
+                        btnCollapse.innerHTML = 'ver mais'
+                    }
+                })
+
+                //Mostrar tópico 2
+                let btnTopic = document.querySelector('.btn-topic1')
+                btnTopic.addEventListener('click', () => {
+                    let topic1 = document.querySelector('.topic-content1')
+                    let topic2 = document.querySelector('.topic-content2')
+
+                    topic1.style.display = 'none'
+                    topic2.style.display = 'block'
+                    btnTopic.style.display = 'none'
+                })
+
+                //Mostrar tópico 3
+                let btnTopic2 = document.querySelector('.btn-topic2')
+                let btnTopic3 = document.querySelector('.btn-topic3')
+                btnTopic2.addEventListener('click', () => {
+                    let topic1 = document.querySelector('.topic-content1')
+                    let topic2 = document.querySelector('.topic-content2')
+                    let topic3 = document.querySelector('.topic-content3')
+                    let blurredTopic = document.querySelector('.motherRelative')
+
+                    topic1.style.display = 'none'
+                    topic2.style.display = 'none'
+                    topic3.style.display = 'block'
+                    btnTopic.style.display = 'none'
+                    btnTopic3.style.display = 'block'
+                    blurredTopic.style.display = 'block'
+                })
+
+                //Mostar respostas na discussao
+                let btnComents = document.querySelector('.btnComents')
+                btnComents.addEventListener('click', () => {
+                    let answers = document.querySelector('.topic-answers')
+
+                    if (answers.style.display === 'none') {
+                        answers.style.display = 'block'
+                    } else {
+                        answers.style.display = 'none'
+                    }
+                })
+            </script>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
